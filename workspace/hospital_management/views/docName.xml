@@ -1,0 +1,34 @@
+<odoo>
+	<record id="view_doctor_form" model="ir.ui.view">
+		<field name="name">doctor.name.form</field>
+		<field name="model">doctor.name</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>    
+						<group>
+							<field name="name"></field>
+							<field name="degrees_id"></field>
+						</group>
+						<group>
+						     <field name="belongsTo"></field>
+					    </group>
+					</group>    
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="view_doctor_tree" model="ir.ui.view">
+		<field name="name">doctor.name.tree</field>
+		<field name="model">doctor.name</field>
+		<field name="arch" type="xml">
+		   <tree>		   	
+			  <field name="name"></field>
+	          <field name="belongsTo"></field>
+	          <field name="no_of_apps"></field>
+
+		   </tree>
+		</field>
+	</record>
+</odoo>    
